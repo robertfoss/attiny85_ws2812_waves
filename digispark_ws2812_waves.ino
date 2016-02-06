@@ -85,10 +85,8 @@ void wave_fx()
     byte intensity = brightness;
     for (uint8_t i = 0; i < NUM_LEDS; i++) {
         uint8_t base_change = time / wave_time_div;
-        float color_rotation_time = (sin(f(time) / f(12000)) + 1) / 2;
-        uint8_t color_rotation = i * color_rotation_speed * color_rotation_time;
-//        uint8_t color_rotation_time = sin8(time / 12000);
-//        uint8_t color_rotation = i * color_rotation_speed * color_rotation_time / 255;
+        uint8_t color_rotation_time = sin8(time / 12000);
+        uint8_t color_rotation = i * color_rotation_speed * color_rotation_time / 255;
         uint8_t wave = sin8(base_change + color_rotation);
 
         cRGB value;
