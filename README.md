@@ -1,4 +1,6 @@
 # ATTiny85 WS2812 Waves Animation
 
+![Alt text](/../media/anim.gif?raw=true "Goggles")
+
 Dependencies:
- * [FasLED](http://fastled.io/)
+ * [FastLED](http://fastled.io/)
