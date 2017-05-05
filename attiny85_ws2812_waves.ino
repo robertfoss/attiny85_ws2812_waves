@@ -1,5 +1,6 @@
 #include <FastLED.h>
 
+
 #define DATA_PIN_0 0
 #define DATA_PIN_1 1
 #define BTN_PIN    2
@@ -8,10 +9,11 @@
 
 static const int wave_time_div = 16;
 static const int color_rotation_speed = 8;
-static const byte levels[] = { 64, 128, 192, 255 };
+static const byte levels[] = { 20, 48, 64, 128, 192, 255 };
 static const uint8_t nbr_levels = sizeof(levels)/sizeof(levels[0]);
 
 CRGB leds[NUM_LEDS];
+
 
 bool is_btn_pressed()
 {
